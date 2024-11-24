@@ -4,11 +4,7 @@ pipeline {
         maven 'maven'
     }
     stages {
-        stage('Build') {
-            steps {
-                sh 'mvn -B compile'
-            }
-        }
+
         stage('Test') {
             steps {
                 sh 'mvn clean install'
