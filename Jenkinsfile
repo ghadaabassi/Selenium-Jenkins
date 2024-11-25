@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         // Set a variable for the report path
-        REPORT_PATH = "target/cucumber-reports/*.json"
+        REPORT_PATH = "target/*.json"
     }
 
     stages {
@@ -38,7 +38,7 @@ pipeline {
             post {
                 always {
                     // Archive test results (e.g., Surefire reports and Cucumber reports)
-                    archiveArtifacts artifacts: 'target/surefire-reports/*.xml, target/cucumber-reports/*.json', allowEmptyArchive: true
+                    archiveArtifacts artifacts: 'target/*.json', allowEmptyArchive: true
                 }
             }
         }
