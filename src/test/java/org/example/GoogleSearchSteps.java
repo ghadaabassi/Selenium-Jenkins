@@ -20,7 +20,6 @@ public class GoogleSearchSteps {
     public WebDriverWait wait;
     @Before
     public void createWebDriver() {
-      //  System.setProperty("webdriver.edge.driver", "C:\\Users\\Ghada\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments("--disable-extensions");
         edgeOptions.addArguments("--disable-web-security");
