@@ -20,10 +20,7 @@ public class StepDef {
 
     @Before
     public void setupWebDriver() {
-        // Set the Edge driver system property
-      // System.setProperty("webdriver.edge.driver", "C:/Users/Ghada/Downloads/edgedriver_win64 (1)/msedgedriver.exe");
 
-        // Set up EdgeOptions
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments("--disable-extensions");
         edgeOptions.addArguments("--disable-web-security");
